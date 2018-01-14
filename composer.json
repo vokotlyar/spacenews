@@ -1,0 +1,24 @@
+{
+  "name": "v/spacenews.loc",
+  "description": "Astro news web-site",
+  "require": {
+    "phpunit/phpunit": "^6.3",
+    "sunra/php-simple-html-dom-parser": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Models\\News\\": "application/models/news",
+      "Models\\User\\": "application/models/user",
+      "Models\\NewsParsers\\": "application/models/news_parsers",
+      "Models\\Renderers\\": "application/models/renderers",
+      "Models\\NewsParsers\\HiNewsRu\\": "application/models/news_parsers/hi_news_ru",
+      "Models\\NewsParsers\\KosmosX\\": "application/models/news_parsers/kosmos-x_net_ru",
+      "Models\\NewsParsers\\VKosmose\\": "application/models/news_parsers/v-kosmose_com",
+      "Models\\DB\\": "application/models/db",
+      "Views\\": "application/views",
+      "Errors\\": "application/errors",
+      "Controllers\\": "application/controllers",
+      "Models\\Images\\": "application/models/images"
+    }
+  }
+}
